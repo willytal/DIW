@@ -1,0 +1,139 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-oct-2018, 8:43:28
+    Author     : willy
+*/
+
+* 
+{
+    box-sizing: border-box;
+}
+
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] 
+{
+    float: left;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px) 
+{
+    .col-m-1 {width: 20%;}
+    .col-m-2 {width: 40%;}
+    .col-m-3 {width: 60%;}
+    .col-m-4 {width: 80%;}
+    .col-m-5 {width: 100%;}
+    .texto{font-size: 1.5em;};
+}
+
+@media only screen and (min-width: 1148px) 
+{
+    .col-l-1 {width: 20%;}
+    .col-l-2 {width: 40%;}
+    .col-l-3 {width: 60%;}
+    .col-l-4 {width: 80%;}
+    .col-l-5 {width: 100%;}
+    .texto{font-size: 2em;};
+}
+
+body{
+    font-family: 'Righteous', cursive;
+    min-width: 500px;
+}
+
+header {
+    background-color: #f49e00;
+    padding: 15px;
+    color: white;
+    clear: both;
+    border-radius: 5px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 2px gray;
+}
+
+li a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+li a:hover{
+    color: white;
+}
+
+.img-responsive
+{
+    width: 100%;
+    height: auto;
+}
+
+main{
+
+}
+
+footer{
+    padding: 15px;
+    min-height: 50px;
+    background-color: #6666FF;
+    text-align: center;
+}
+
+.tarjeta
+{
+    box-shadow: 5px 5px 8px gray;
+    border-radius: 5px;
+    background-color: #CECEFF;
+    color: black;
+    text-align: justify;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+}
+
+.galery{
+    background-color: #f6f6f6;
+    border-radius: 2px;
+}
+
+#login{
+    float: right;
+    text-align: right;
+}
+
+#menu{
+    background-color: #9696FF; 
+    border-radius: 8px;
+}
+
+#formregistro input{
+    text-align: center;
+    float: right;
+}
+
+#formregistro label{
+    float:left;
+}
